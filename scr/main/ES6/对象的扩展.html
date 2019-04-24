@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function f(x, y) {
+        return {x, y}
+    }
+
+    //等同于
+    function f1(x, y) {
+        return {x: x, y: y}
+    }
+
+    // module.exports = {getItems, setItem}
+    // //等同于
+    // module.exports = {
+    //     getItems: getItems,
+    //     setItem: setItem
+    // }
+
+    var target = {a: 1, b: 1};
+    var source1 = {b: 2, c: 2}
+    var source2 = {c: 4}
+    Object.assign(target, source1, source2)
+    //target={a:1,b:2,c:4}
+
+    let obj = {foo: 123}
+    console.log(Object.getOwnPropertyDescriptor(obj, "foo"))
+    // configurable: true
+    // enumerable: true
+    // value: 123
+    // writable: true
+</script>
+</body>
+</html>
