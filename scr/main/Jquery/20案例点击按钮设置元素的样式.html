@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+
+    //点击按钮,设置div的宽,高,背景颜色,边框
+    $(function () {
+      $("#btn").click(function () {
+        $("#dv").css("width","300px");
+        $("#dv").css("height","200px");
+        $("#dv").css("backgroundColor","red");
+        $("#dv").css("border","1px solid green");
+      });
+    });
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<div id="dv"></div>
+
+</body>
+</html>

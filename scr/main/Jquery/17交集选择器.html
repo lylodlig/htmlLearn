@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    .cls{
+      background-color: blue;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+
+    $(function () {
+      //根据id选择器获取按钮,添加点击事件
+      $("#btn").click(function () {
+        //交集选择器----标签+类选择器
+        //先找p标签,从p标签中找应用了cls类样式的元素
+        $("p.cls").css("backgroundColor","green");
+      });
+    });
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<p class="cls">小苏喜欢助教很久了</p>
+<p>其实助教也喜欢小苏</p>
+<ul>
+  <li>小苏</li>
+  <li>助教</li>
+  <li>班主任</li>
+</ul>
+<span class="cls">我和小苏坐地铁上班,看到了一个很漂亮的女生,旁边站着一个很猥琐的男生,我回头和小苏说:真想大声的喊出来,好白菜都让猪拱了,小苏快速的拉动着我的衣角,千万不要这么做,我的轮椅都换了两个了</span>
+
+</body>
+</html>

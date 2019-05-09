@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    //点击按钮,显示一句话
+//    $("#btn").click(function () {
+//      console.log("小苏好帅哦");
+//    });
+
+    //没有页面加载的事件
+
+
+    //注册事件----赋值的
+    //DOM中页面加载事件--------页面全部加载完毕才触发(标签,文字,图片,引入的文件)
+//    window.onload=function () {
+//      console.log("小苏好帅");
+//    };
+//    window.onload=function () {
+//      console.log("哈哈,我又变帅了");
+//    };
+
+
+    //jQuery的代码
+
+    //页面加载事件
+
+    //jQuery中第一种页面加载的事件
+//    $(window).load(function () {
+//      console.log("小苏好猥琐哦");
+//    });
+    $(window).load(function () {
+      console.log("哈哈,小杨好帅哦");
+    });
+//
+//    //jQuery中第二种页面加载的事件----比上面的快---页面中的基本的元素加载后就触发
+    $(document).ready(function () {
+      console.log("1");
+    });
+//    $(document).ready(function () {
+//      console.log("2");
+//    });
+//
+//    //jQuery中第三种页面加载的事件---页面中基本的元素加载后就触发了
+    jQuery(function () {
+      console.log("页面加载了1111");
+    });
+//
+//    jQuery(function () {
+//      console.log("页面加载了2222");
+//    });
+
+    $(function () {
+      console.log("页面加载了1");
+    });
+//    $(function () {
+//      console.log("页面加载了2");
+//    });
+
+
+
+
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<script>
+//  document.getElementById("btn").onclick=function () {
+//    console.log("1");
+//  };
+//  document.getElementById("btn").onclick=function () {
+//console.log("2");
+//  };
+
+
+//  var num=10;
+//
+//  var num=100;
+//  console.log(num);
+</script>
+</body>
+</html>

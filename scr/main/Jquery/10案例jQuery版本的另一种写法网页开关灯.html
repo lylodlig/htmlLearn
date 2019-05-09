@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+</head>
+<body>
+<input type="button" value="关灯" id="btn"/>
+<script src="jquery-1.12.1.js"></script>
+<script>
+
+  //表单标签DOM操作中设置和获取value属性的值---->对象.value
+  //jQuery中:
+  /*
+  *
+  * jQuery对象.val();-------表示的是获取该元素的value属性值
+  * jQuery对象.val("值");----表示的是设置该元素的value属性
+  * jQuery对象.css("css的属性名字","属性的值");---->设置元素的样式属性值
+  * 注意:
+  * .css("属性","值");属性的写法可以是DOM操作中的js写法,也可以是css中的写法
+  *
+  *
+  * */
+  //根据id属性值获取按钮,注册点击事件(添加点击事件,调用点击事件的方法)
+  $("#btn").click(function () {
+    //判断这个按钮的值来修改body的样式
+    //此处的this是当前的按钮DOM对象
+    //判断按钮的value值是不是关灯
+    if($(this).val()=="关灯"){
+      //修改body的背景颜色
+      $("body").css("backgroundColor","black");
+      $(this).val("开灯");
+    }else{
+      $("body").css("backgroundColor","");
+      $(this).val("关灯");
+    }
+  });
+
+//  $("#btn").click(function () {
+//    //获取按钮的value属性值
+//    //console.log($(this).val());
+//
+//    $(this).val("哈哈,我又变帅了");
+//  });
+
+</script>
+
+</body>
+</html>
